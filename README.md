@@ -8,7 +8,7 @@
 > ⚠️ For educational purposes only. Misuse of this tool may violate WhatsApp’s Terms of Service and could result in account suspension or a permanent ban.
 
 [![status](https://img.shields.io/badge/status-active-brightgreen.svg?style=flat)](https://github.com/xodivorce/audio-to-image-node/)
-[![version](https://img.shields.io/badge/version-v1.0.0-yellow.svg?style=flat)](https://github.com/xodivorce/audio-to-image-node/)
+[![version](https://img.shields.io/badge/version-v1.0.1-yellow.svg?style=flat)](https://github.com/xodivorce/audio-to-image-node/)
 [![PRs](https://img.shields.io/badge/PRs-welcome-blue.svg?style=flat)](https://github.com/xodivorce/audio-to-image-node/)
 
 > **🥰 Like this project? Please consider giving it a Star (🌟) on GitHub to show us your appreciation. Thank you!**
@@ -31,6 +31,7 @@
 
 2. **Set up your environment**
    - Ensure you have [Node.js](https://nodejs.org/) version 14 or higher installed.
+   - Create an `.env` at the home directory and then fill that as the `.env.example`.
 
 3. **Install dependencies**
    - Navigate to the project directory and install the required packages:
