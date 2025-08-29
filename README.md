@@ -8,7 +8,7 @@
 > ⚠️ For educational purposes only. Misuse of this tool may violate WhatsApp’s Terms of Service and could result in account suspension or a permanent ban.
 
 [![status](https://img.shields.io/badge/status-active-brightgreen.svg?style=flat)](https://github.com/xodivorce/audio-to-image-node/)
-[![version](https://img.shields.io/badge/version-v1.0.1-yellow.svg?style=flat)](https://github.com/xodivorce/audio-to-image-node/)
+[![version](https://img.shields.io/badge/version-v1.0.2-yellow.svg?style=flat)](https://github.com/xodivorce/audio-to-image-node/)
 [![PRs](https://img.shields.io/badge/PRs-welcome-blue.svg?style=flat)](https://github.com/xodivorce/audio-to-image-node/)
 
 > **🥰 Like this project? Please consider giving it a Star (🌟) on GitHub to show us your appreciation. Thank you!**

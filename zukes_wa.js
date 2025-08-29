@@ -2,7 +2,7 @@ require("dotenv").config();
 const { Client, LocalAuth } = require("whatsapp-web.js");
 const qrcode = require("qrcode-terminal");
 
-//CONFIG
+// CONFIG
 const numbers = process.env.NUMBERS.split(",").map(n => n.trim());
 const messages = process.env.MESSAGES.split(";").map(m => m.trim());
 const rounds = parseInt(process.env.ROUNDS, 10) || 1;
@@ -46,12 +46,21 @@ client.on("ready", async () => {
           console.log(
             `📩 Sent to ${number}: "${messages[m]}" (round ${round}/${rounds}, msg ${m + 1}/${messages.length})`
           );
+
+          // Countdown wait after every message
+          let wait = Math.ceil(delayMs / 1000);
+          const waitTimer = setInterval(() => {
+            process.stdout.write(`\r⏳ Starting in ${wait--}s...   `);
+            if (wait < 0) {
+              clearInterval(waitTimer);
+              process.stdout.write("\r🚀 Next message...\n");
+            }
+          }, 1000);
+
+          await new Promise(r => setTimeout(r, delayMs));
+
         } catch (err) {
           console.error(`❌ Failed to send to ${number}: "${messages[m]}" — ${err.message}`);
-        }
-
-        if (m < messages.length - 1) {
-          await new Promise(r => setTimeout(r, delayMs));
         }
       }
     }
